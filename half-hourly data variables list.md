@@ -38,6 +38,7 @@ Units are listed at the end of each variable description.  All variables may not
 *	**ST** – soil temperature measured by a set of TCAV-averaging soil thermocouples (°C)
 *	**ST_gf** – ST with missing half-hours (up to five consecutive half-hours) gap-filled by linear interpolation (°C)
 *	**ST_qc** – ST_gf with quality control procedures applied (bad data removed) – includes de-spiking and removal of intermittent or anomalous measurements associated with issues such as low battery power or sensor damage (°C)
+*	**CV** – estimation of the soil volumetric heat capacity in the surface layer based on an estimated soil bulk density of 1.2 Mg m-3 and a volumetric water content in the surface of 0.2 m3 m-3
 *	**STdiff_gf** – difference in soil temperature from one half-hour to the next with missing half-hours (up to five consecutive half-hours) gap-filled by linear interpolation (°C)
 *	**STdiff_qc** – difference in soil temperature from one half-hour to the next with quality control procedures applied (bad data removed) – includes de-spiking and removal of intermittent or anomalous measurements associated with issues such as low battery power or sensor damage (°C)
 *	**TfTi_gf** – estimated storage contribution to the ground heat flux with missing half-hours (up to five consecutive half-hours) gap-filled by linear interpolation
@@ -172,7 +173,6 @@ Units are listed at the end of each variable description.  All variables may not
 
 ## Volumetric Water Content related variables
 
-*	**CV** – estimation of the soil volumetric heat capacity in the surface layer based on an estimated soil bulk density of 1.2 Mg m-3 and a volumetric water content in the surface of 0.2 m3 m-3
 *	**PA_uS_1** – output period from CS616 1
 *	**PA_uS_2** – output period from CS616 2
 *	**PA_uS_3** – output period from CS616 3
