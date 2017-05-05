@@ -4,8 +4,6 @@ This document provides background information on the provided data including a d
 
 Half-hourly measurements and data are provided for each station as .csv files. 
 
-An html file that includes a summary of metadata and interactive time-series plots for quickly exploring the data is also provided for each station.  To zoom in on these plots, drag and selecta window with the mouse. To pan across the data at that zoom level, press and hold the shift key and drag the mouse in the direction you wish to view. To zoom out fully, double-click the mouse. 
-
 Throughout this document, flux densities are referred to as fluxes for convenience.
 
 ## Half-hourly Data
