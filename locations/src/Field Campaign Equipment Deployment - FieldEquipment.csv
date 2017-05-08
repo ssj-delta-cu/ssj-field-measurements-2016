@@ -1,0 +1,17 @@
+,Station ID,Latitude,Longitude,Latitude (decimal degrees),Longitude (decimal degrees),Elevation (m),Name / Island,Crop,Deployed,Removed,type of station,Co-location with other equipment
+1,D13,"37°54'23.50""N","121°24'49.49""W",37.91,-121.41,0.61,Roberts,alfalfa,7/18/2016,,full,no
+2,D10,"37°56'36.00""N","121°32'15.46""W",37.94,-121.54,-4.57,Bacon,alfalfa,7/15/2016,,lite ,no
+3,D07,"38°6'6.49""N","121°30'20.05""W",38.10,-121.51,-3.35,Bouldin,alfalfa,7/14/2016,,lite,no
+4,D14,"38°6'52.75""N","121°38'48.78""W",38.11,-121.65,-3.35,Twitchell,alfalfa,8/10/2016,,lite,UC Berkeley EC system
+5,D02,"38°13'17.02""N","121°29'49.54""W",38.22,-121.50,-1.22,Staten,alfalfa,4/28/2016,4/26/2017,lite,no
+,,,,,,,,,,,,
+1,D11,"38°11'11.67""N","121°30'36.06""W",38.19,-121.51,-3.96,Staten,maize,4/20/2016,9/23/2016,full,no
+2,D09,"37°57'7.43""N","121°32'18.24""W",37.95,-121.54,-5.49,Bacon,maize,7/15/2016,10/26/2016,lite,no
+3,D08,"38°5'55.51""N","121°30'57.76""W",38.10,-121.52,-3.66,Bouldin,maize,7/14/2016,9/26/2016,lite,no
+4,D06,"37°59'10.46""N","121°35'8.74""W",37.99,-121.59,-3.66,Holland,maize,7/13/2016,10/7/2016,lite,no
+5,D01,"37°49'40.62""N","121°29'5.08""W",37.83,-121.48,-1.52,Union,maize,4/19/2016,9/23/2016,lite,no
+,,,,,,,,,,,,
+1,D12,"38° 6'58.01""N","121°39'33.31""W",38.12,-121.66,-1.52,Twitchell,pasture,6/17/2016,12/2/2016,full,"no, but CIMIS does have another pasture station on Twitchell "
+2,D03,"38°11'32.48""N","121°30'37.35""W",38.19,-121.51,-3.35,Staten,pasture,5/31/2016,,lite,CIMIS
+3,D04,"38° 2'0.14""N","121°42'4.61""W",38.03,-121.70,-3.66,Jersey,pasture,6/7/2016,,lite,CIMIS
+4,D05,"37°45'19.97""N","121°15'57.59""W",37.76,-121.27,6.7,Ripon,pasture,6/9/2016,,lite,CIMIS
