@@ -1,4 +1,4 @@
-Station_ID,Latitude,Longitude,Latitude_dd,Longitude_dd,Elevation_m,Island_Name,Crop,Deployed,Removed,Station_type,Other_Equipment
+Station_ID,Latitude,Longitude,Lat_dd,Long_dd,ElevationM,IslandName,Crop,Deployed,Removed,Type,Equipment
 D13,"37°54'23.50""N","121°24'49.49""W",37.90652778,-121.4137472,0.61,Roberts,alfalfa,7/18/2016,,full,no
 D10,"37°56'36.00""N","121°32'15.46""W",37.94333333,-121.5376278,-4.57,Bacon,alfalfa,7/15/2016,,lite ,no
 D07,"38°6'6.49""N","121°30'20.05""W",38.10180278,-121.5055694,-3.35,Bouldin,alfalfa,7/14/2016,,lite,no
