@@ -15,6 +15,7 @@ Units are listed at the end of each variable description.  All variables may not
 ## Basic Information
 
 *	**rDateTime** – date and time of half-hour of measurements. The time listed represents the end of the half-hour of measurements: 13:30 represents measurements from 13:00:01 to 13:30:00. All times are given in GMT -7 (PDT) 
+* **stationName** – name of the ET station
 *	**BattVolt_Avg** – Average datalogger battery voltage over the half-hour (V)
 *	**Tpanel** – temperature measured inside the datalogger (°C)
 *	**Tpanel_qc** – temperature measured inside the datalogger  with quality control procedures applied (bad data removed) – includes de-spiking and removal of intermittent or anomalous measurements associated with issues such as low battery power (°C)
@@ -45,17 +46,19 @@ Units are listed at the end of each variable description.  All variables may not
 *	**G_2_qc** – HFP_2_qc with storage added and quality control procedures applied
 *	**G_qc** – average of G_1_qc and G_2_qc
 *	**G_qc_mm** – G_qc converted to units of evapotranspiration (mm hh-1)
-
+* **G_gf** - 
+* **G_gf_mm** - 
 
 ## Surface Renewal and Thermocouple related variables (including residual ET)
 
 *	**Tc0_Avg** – Average temperature measured by first thermocouple, Tc (°C)  
-*	**Tc0m5sq_Avg** – Average 2nd  order structure function of the Tc temperature signal used in the surface renewal heat flux calculation (°C)2
-*	**Tc0m5sq_Avg_qc** – Tc0m5sq_Avg with quality control procedures applied
-*	**Tc0m5cu_Avg** – Average 3rd order structure function of the Tc temperature signal used in the surface renewal heat flux calculation (°C)3
-*	**Tc0m5cu_Avg_qc** – Tc0m5cu_Avg with quality control procedures applied
-*	**Tc0m5fi_Avg** – Average 5th  order structure function of the Tc temperature signal used in the surface renewal heat flux calculation (°C)5
-*	**Tc0m5fi_Avg_qc** – Tc0m5fi_Avg with quality control procedures applied
+*	**Tc0_Avg_qc** – Tc0_Avg with quality control procedures applied (°C)  
+*	**Tc0m5sq_Avg** – Average 2nd  order structure function of the Tc temperature signal used in the surface renewal heat flux calculation (°C)^2
+*	**Tc0m5sq_Avg_qc** – Tc0m5sq_Avg with quality control procedures applied (°C)^2
+*	**Tc0m5cu_Avg** – Average 3rd order structure function of the Tc temperature signal used in the surface renewal heat flux calculation (°C)^3
+*	**Tc0m5cu_Avg_qc** – Tc0m5cu_Avg with quality control procedures applied (°C)^3
+*	**Tc0m5fi_Avg** – Average 5th  order structure function of the Tc temperature signal used in the surface renewal heat flux calculation (°C)^5
+*	**Tc0m5fi_Avg_qc** – Tc0m5fi_Avg with quality control procedures applied (°C)^5
 *	**Tc_H** – uncalibrated sensible heat flux calculated using by thermocouple Tc (W m-2)
 *	**Tc_H_qc** – uncalibrated sensible heat flux calculated using by thermocouple Tc with quality control procedures applied (bad data removed) – includes de-spiking and removal of intermittent or anomalous measurements associated with issues such as low battery power or sensor damage (W m-2)
 *	**Tc_H_gf** – Tc_H_qc with missing half-hours (up to five consecutive half-hours) gap-filled by linear interpolation (W m-2)
@@ -75,12 +78,13 @@ Units are listed at the end of each variable description.  All variables may not
 *	**ET_Tc_aH_gf**  – LE_Tc_aH_gf converted to units of evapotranspiration (mm hh-1)
 
 *	**Tn0_Avg** – Average temperature measured by second thermocouple, Tn (°C)  
-*	**Tn0m5sq_Avg** – Average 2nd  order structure function of the Tn temperature signal used in the surface renewal heat flux calculation (°C)2
-*	**Tn0m5sq_Avg_qc** – Tn0m5sq_Avg with quality control procedures applied
-*	**Tn0m5cu_Avg** – Average 3rd order structure function of the Tn temperature signal used in the surface renewal heat flux calculation (°C)3
-*	**Tn0m5cu_Avg_qc** – Tn0m5cu_Avg with quality control procedures applied
-*	**Tn0m5fi_Avg** – Average 5th  order structure function of the Tn temperature signal used in the surface renewal heat flux calculation (°C)5
-*	**Tn0m5fi_Avg_qc** – Tn0m5fi_Avg with quality control procedures applied
+*	**Tn0_Avg_qc** – Tn0_Avg with quality control procedures applied (°C) 
+*	**Tn0m5sq_Avg** – Average 2nd  order structure function of the Tn temperature signal used in the surface renewal heat flux calculation (°C)^2
+*	**Tn0m5sq_Avg_qc** – Tn0m5sq_Avg with quality control procedures applied (°C)^2
+*	**Tn0m5cu_Avg** – Average 3rd order structure function of the Tn temperature signal used in the surface renewal heat flux calculation (°C)^3
+*	**Tn0m5cu_Avg_qc** – Tn0m5cu_Avg with quality control procedures applied (°C)^3
+*	**Tn0m5fi_Avg** – Average 5th  order structure function of the Tn temperature signal used in the surface renewal heat flux calculation (°C)^5
+*	**Tn0m5fi_Avg_qc** – Tn0m5fi_Avg with quality control procedures applied (°C)^5
 *	**Tn_H** – uncalibrated sensible heat flux calculated using by thermocouple Tn (W m-2)
 *	**Tn_H_qc** – uncalibrated sensible heat flux calculated using by thermocouple Tn with quality control procedures applied (bad data removed) – includes de-spiking and removal of intermittent or anomalous measurements associated with issues such as low battery power or sensor damage (W m-2)
 *	**Tn_H_gf** – Tn_H_qc with missing half-hours (up to five consecutive half-hours) gap-filled by linear interpolation (W m-2)
@@ -99,8 +103,8 @@ Units are listed at the end of each variable description.  All variables may not
 *	**ET_Tn_aH_qc** -  LE_Tn_aH_qc converted to units of evapotranspiration (mm hh-1)
 *	**ET_Tn_aH_gf** -  LE_Tn_aH_gf converted to units of evapotranspiration (mm hh-1)
 
-*	**SR_H_Avg_qc** – average of uncalibrated quality controlled sensible heat flux from both thermocouples
-*	**SR_H_Avg_gf** – average of uncalibrated gap filled sensible heat flux from both thermocouples
+*	**SR_H_qc** – average of uncalibrated quality controlled sensible heat flux from both thermocouples
+*	**SR_H_gf** – average of uncalibrated gap filled sensible heat flux from both thermocouples
 *	**SR_alpha_pos** - calibration coefficient used to calibrate positive sensible heat fluxes derived from an average of both thermocouples
 *	**SR_alpha_neg** - calibration coefficient used to calibrate negative sensible heat fluxes derived from an average of both thermocouples
 *	**SR_aH_qc** - SR_H_Avg_qc multiplied by the calibration coefficients (W m-2)
@@ -117,6 +121,7 @@ Units are listed at the end of each variable description.  All variables may not
 *	**H_ECraw** – eddy covariance sensible heat flux without coordinate rotation
 *	**H_ECraw** – H_ECraw with quality control procedures applied
 *	**H_ECrot** – eddy covariance sensible heat flux with 2D coordinate rotation applied
+*	**H_ECrot_cor** – H_ECrot with transducer shadowing correction (Kochendorfer et al. 2012, Horst et al. 2016) and typical spectral correction (Kochendorfer and Paw U 2011). 
 *	**H_ECrot_qc** - H_ECrot with quality control procedures applied
 *	**H_ECrot_gf** - H_ECrot_qc with gaps filled
 *	**H_ECrot_qc_mm** - H_ECrot_qc converted to units of evapotranspiration (mm hh-1)
@@ -168,7 +173,6 @@ Units are listed at the end of each variable description.  All variables may not
 *	**cov_TT_qc** – cov_TT with quality control procedure applied (m2 s-2)
 
 
-
 ## Volumetric Water Content related variables
 
 *	**PA_uS_1** – output period from CS616 1
@@ -200,5 +204,40 @@ Units are listed at the end of each variable description.  All variables may not
 *	**Ta_Avg_qc** – mean air temperature measured in the cover of a naturally-aspirated radiation shield with quality control procedures applied (bad data removed) – includes de-spiking and removal of intermittent or anomalous measurements associated with issues such as low battery power or sensor damage (W m-2)(°C)  
 *	**Td_Avg** – mean dewpoint temperature measured (°C) 
 *	**Td_Avg_qc** – mean dewpoint temperature measured with quality control procedures applied (bad data removed) – includes de-spiking and removal of intermittent or anomalous measurements associated with issues such as low battery power or sensor damage (W m-2) (°C) 
+
+## IRGASON station-specific variables
+
+* **IRGASON_LE** - latent energy flux measured by the IRGASON using eddy covariance
+* **IRGASON_LE_WPL** - IRGASON_LE with the Webb, Pearman, and Leuning (1980) correction applied
+* **IRGASON_LE_WPL_cor** - IRGASON_LE_WPL multiplied by 1.08 to correct for transducer shadowing (Horst et al. 2016) and typical spectral correction (Kochendorfer and Paw U 2011). 
+* **IRGASON_LE_WPL_qc** - IRGASON_LE_WPL_cor with quality control procedures applied. The IRGASON had a lot more problems with spikes than most of the other variables and required extra quality control measures. Incomplete half-hours where the number samples taken by the IRGASON was less than 18000 were removed. Values below -50 W/m^2 were removed due to the possibility of condensation interfering with the measurements. Likewise, half-hours where precipitation was recorded were removed. Half-hours when wind direction was within 45 degrees from south were removed to avoid periods when the sampling volume was downwind of the sensor body (since the IRGASON is not omni-directional like the R.M. Young 81000RE used at the other stations). Half-hours when net radiation was less than zero, but the IRGASON registered LE values greater than 200 W/m^2 were removed as suspect. Finally if a moving median (29 half-hours) and the difference between the IRGASON_LE and the median was calculated. Half-hour values where this difference fell more than three standard deviations away from the median were removed as suspect. (W/m^2)
+* **IRGASON_ET_WPL_qc** - IRGASON_LE_WPL_qc coverted into units of ET (mm/half-hour)
+* **IRGASON_LE_WPL_gf** - IRGASON_LE_WPL_qc with gaps filled (up to 5 consecuative half-hours) (W/m^2)
+* **IRGASON_ET_WPL_gf** - IRGASON_LE_WPL_qc coverted into units of ET (mm/half-hour)
+
+* **n_obs_csat** - number of samples from the IRGASON sonic anemometer used in the half-hourly stats (18000 for a complete half-hour at 10Hz)  
+* **n_obs_licor** - number of samples from the IRGASON gas analyzer used in the half-hourly stats (18000 for a complete half-hour at 10Hz)  
+
+* **CNR4TC_Avg** - average temperature of the CNR4 radiometer (°C)
+* **LDn_Avg** - longwave radiation measured by the lower pyrgeometer on the CNR4, uncorrected for instrument temperature (W/m^2) 
+* **LDnCo_Avg** - longwave radiation measured by the lower pyrgeometer on the CNR4,corrected for instrument temperature (W/m^2)
+* **LUp_Avg** - longwave radiation measured by the upper pyrgeometer on the CNR4, uncorrected for instrument temperature (W/m^2)
+* **LUpCo_Avg** - longwave radiation measured by the upper pyrgeometer on the CNR4,corrected for instrument temperature (W/m^2)
+* **SDn_Avg** - shortwave radiation measured by the lower pyranometer on the CNR4 (W/m^2) 
+* **SUpt_Avg** - shortwave radiation measured by the upper pyranometer on the CNR4 (W/m^2) 
+* **RlNet_Avg** - net longwave radiation measured by the CNR4  (W/m^2) 
+* **RsNet_Avg** - net shortwave radiation measured by the CNR4  (W/m^2) 
+
+* **Pcp_Tot** - preciptation measured by rain-gauge (mm/half-hour)
+
+* **ST1** - soil temperature measured by first set of TCAV-averaging soil thermocouples (°C)
+* **ST1_qc** - ST1 with quality control procedure applied (°C) 
+* **ST2** - soil temperature measured by second set of TCAV-averaging soil thermocouples (°C)
+* **ST2_qc** - ST2 with quality control procedure applied (°C) 
+* **ST3** - soil temperature measured by third set of TCAV-averaging soil thermocouples (°C) 
+* **ST3_qc** - ST3 with quality control procedure applied (°C) 
+
+
+
 
 
