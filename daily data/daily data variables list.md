@@ -105,9 +105,19 @@ All variables in this file are expressed in the units of evapotranspiration (mm/
 *	**ET_SR_aH_gf_Dgf2** – ET_SR_aH_gf_Dgf with missing days gap-filled by linear interpolation
 *	**Ka_SR** – Actual Daily ET (derived from average of Tc and Tn  H measurements) divided by reference ET from Spatial CIMIS (Ka_SR =   ET_SR_aH_qc_Dgf / ETo_mm) 
 
- 
+#### IRGASON station-specific variables
 
+* **IRGASON_ET_WPL** - daily sum of half-hourly ET measured by IRGASON (no quality control applied) 
+* **IRGASON_ET_WPL_qc** - daily sum of quality controlled half-hourly ET measured by IRGASON 
+* **IRGASON_ET_WPL_qc_count** - number of half-hours used in IRGASON_ET_WPL_qc (complete day = 48)
+* **IRGASON_ET_WPL_gf** - daily sum of gap-filled half-hourly IRGASON ET
+* **IRGASON_ET_WPL_gf_count** - number of half-hours used in IRGASON_ET_WPL_gf (complete day = 48)
+* **IRGASON_ET_WPL_qc_Dqc** - IRGASON_ET_WPL_qc with incomplete days (count < 48) removed
+* **IRGASON_ET_WPL_gf_Dqc** - IRGASON_ET_WPL_gf with incomplete days (count < 48) removed
+* **IRGASON_ET_WPL_gf_Dgf2** - IRGASON_ET_WPL_gf with missing days gap-filled by linear interpolation
+* **Ka_IRGASON** - Actual Daily ET (derived from direct IRGASON measurements) divided by reference ET from Spatial CIMIS (Ka_IRGASON =   IRGASON_ET_WPL_qc_Dgf / ETo_mm) 
 
+* **Pcp_Tot** - preciptation (mm/day)
 
 
 
