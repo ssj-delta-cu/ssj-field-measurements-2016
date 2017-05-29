@@ -14,7 +14,7 @@ Units are listed at the end of each variable description.  All variables may not
 
 ## Basic Information
 
-*	**rDateTime** – date and time of half-hour of measurements. The time listed represents the end of the half-hour of measurements: 13:30 represents measurements from 13:00:01 to 13:30:00. All times are given in GMT -7 (PDT) 
+*	**rDateTime** – date and time of half-hour of measurements. The time listed represents the end of the half-hour of measurements: 13:30 represents measurements from 13:00:01 to 13:30:00. All times are given in GMT -8 (PST) 
 * **stationName** – name of the ET station
 *	**BattVolt_Avg** – Average datalogger battery voltage over the half-hour (V)
 *	**Tpanel** – temperature measured inside the datalogger (°C)
